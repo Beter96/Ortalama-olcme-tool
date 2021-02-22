@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Matematik sınav puanın nedir? :> " var1
+read -p "Türkçe sınav puanın nedir?:> " var2
+read -p "Fen bilimleri sınav puanın nedir? :> " var3
+read -p "Sosyal Bilgiler sınav puanın nedir? :> " var4
+read -p "Din Kültürü ve Ahlak Bilgisi sınav puanın nedir? :>" var5
+read -p "İngilizce sınav puanın nedir? :>" var6
+
+
+var7=$(( $var1 + $var2 + $var3 + $var4 + $var5 + $var6))
+
+echo "Sonuç: $(( $var7 / 6))"
